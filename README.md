@@ -10,7 +10,7 @@ The following need to be installed before running this demonstration:
 * A JDK (with the environment variable of JAVA_HOME set and tha PATH edited to include the path to the java executables)
 * Scala (I advise you not to use Scala 2.11 as this needs additional steps in its build that further complicate matters)
 * Apache Spark - the original demonstration runs with Spark 1.6.1.  Installing Spark is not straightforward.  The document [] contains details of how I installed Spark on Linux Mint 17.2.  Those instructions will need to be changed for other Linux distributions
-* Riak TS 1.2 - a download and instructions for installing this for Basho staff can be found at [].  The demonstration assumes one node running locally.
+* Riak TS 1.2 - a download can be found [here](https://help.basho.com/entries/109111966-1-2-0-Release) and instructions for installing this for Basho staff can be found [here](http://docs.basho.com/riak/ts/1.2.0/installing/).  The demonstration assumes one node running locally.
 * A build environment:  on Debian/ubuntu derivatives this is installed as <code>$sudo apt-get install build-essential</code>.  On RHEL derived systems this is a groupinstall of "development-tools".
 * Python 2.7 this should be available as part of any Linux distribution, but if the version included is less than 2.7 you will need to upgrade.
 * Pip - the python install tool; on linux mint and Debian/Ubuntu derivatives this can be installed with "sudo apt-get install python-pip".
