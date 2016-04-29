@@ -34,7 +34,7 @@ $virtualenv</code>
 * Unzip the demo-data-extract.zip file to get demo-data-extract.csv 
 
 ##Demonstration instructions
-_This is not a demonstration of the Jupyter notebook analysis environment.  To run python code contained in a notebook cell you have to use the key combination <shift>+<enter>.  If you want to explore Jupyter further, I refer you to the project [homepage](http://jupyter.org)_
+_This is not a demonstration of the Jupyter notebook analysis environment.  To run python code contained in a notebook cell you have to use the key combination SHIFT+ENTER.  If you want to explore Jupyter further, I refer you to the project [homepage](http://jupyter.org)_
 
 Ensure Riak TS1.2 is running.
 
