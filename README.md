@@ -44,7 +44,7 @@ Ensure Riak TS is running.
 <code>
 $cd $path_to_riak
 
-bin/riak start
+$bin/riak start
 </code>
 
 With your python virtual environment active (see above), in the riak-ts-aarhus-demo subdirectory enter the following:
