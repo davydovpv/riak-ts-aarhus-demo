@@ -54,8 +54,8 @@ With your python virtual environment active (see above), in the riak-ts-aarhus-d
 This will start a jupyter notebook server and open your browser to its home directory.  
 
 In that directory you will find the following files (there will also be other files but you can ignore them as the server lists the subdirectory contents):
-* _Create-table-aarhus.ipynb_ - this is the initial notebook to create the table in RiakTS for the demonstration data, so run this first.  Once it has run, follow the instructions in the notebook for changing the default replication value (n_val).  Then in a separate terminal window (running the python virtual environment) run the python load script with the following command <code>$python load-data.py</code>  Once that has completed, switch to the Jupyter server homepage again in your browser and access
-* _Querying-arhus-data.ipynb_ - this notebook does an analysis of the aarhus sensor data for the sensor pair 668, then invoke the following from the server home page
+* _create-table-aarhus.ipynb_ - this is the initial notebook to create the table in RiakTS for the demonstration data, so run this first.  Once it has run, follow the instructions in the notebook for changing the default replication value (n_val).  Then in a separate terminal window (running the python virtual environment) run the python load script with the following command <code>$python load-data.py</code>  Once that has completed, switch to the Jupyter server homepage again in your browser and access
+* _querying-arhus-data.ipynb_ - this notebook does an analysis of the aarhus sensor data for the sensor pair 668, then invoke the following from the server home page
 * _aarhus-pyspark.ipynb_ - this notebook uses the Riak-Spark connector to do further analysis of the sensor pair 668 data.
 
 
