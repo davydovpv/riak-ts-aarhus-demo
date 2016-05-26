@@ -28,6 +28,7 @@ In the following instructions I assume that the demonstration is being loaded an
 
 <code>
 $cd riak-ts-aarhus-demo
+
 $virtualenv
 </code>
 
@@ -42,6 +43,7 @@ Ensure Riak TS is running.
 
 <code>
 $cd $path_to_riak
+
 bin/riak start
 </code>
 
