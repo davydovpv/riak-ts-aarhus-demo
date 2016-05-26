@@ -22,7 +22,7 @@ totalcount=0
 batchcount=0
 batchsize=100
 ds=[]
-t=c.table('aarhus2')
+t=c.table('aarhus')
 print t
 
 
