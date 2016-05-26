@@ -26,30 +26,40 @@ In the following instructions I assume that the demonstration is being loaded an
 * Clone this repository to your machine.
 * Create a python virtualenv - I will assume that you will use the cloned repository on your machine as the virtualenv, so to accomplish this task do:
 
-<code>
+```bash
 $cd riak-ts-aarhus-demo
-
 $virtualenv
-</code>
+```
 
-* Once the virtualenv has been created enter <code>$source ./bin/activate</code>  This will change the command prompt showing the virtual environment is active.
-* Then enter <code>$pip install -r requirements.txt</code> This will load the required python modules, including the current Riak python client.
+* Once the virtualenv has been created enter `$source ./bin/activate`  This will change the command prompt showing the virtual environment is active.
+* Then enter `$pip install -r requirements.txt` This will load the required python modules, including the current Riak python client.
 * Unzip the demo-data-extract.zip file to get demo-data-extract.csv 
 
 ##Demonstration instructions
 _This is not a demonstration of the Jupyter notebook analysis environment.  To run python code contained in a notebook cell you have to use the key combination SHIFT+ENTER.  If you want to explore Jupyter further, I refer you to the project [homepage](http://jupyter.org)_
 
-Ensure Riak TS is running.
+Ensure Riak TS is running. Consider modifying the default configuration in `etc/riak.conf` when running a development installation of a single instance of Riak. 
 
-<code>
+```bash
 $cd $path_to_riak
 
+#assuming a developer environment of a single instance
+#change ring_size from default (64) to 16
+#this is a better reflection of how many virtual nodes would be allocated to a single machine in a Riak cluster
+$echo "ring_size = 16" >> etc/riak.conf
+
+#assuming a developer environment of a single instance
+#change replica count from default (3) to 1
+#otherwise Riak will write 3 replicas to the same instance
+$echo "buckets.default.n_val = 1" >> etc/riak.conf
+
+#start riak
 $bin/riak start
-</code>
+```
 
 With your python virtual environment active (see above), in the riak-ts-aarhus-demo subdirectory enter the following:
 
-<code>SPARK_CLASSPATH=/path/to the /jar file/installed including the /jarfile jupyter notebook</code>
+`SPARK_CLASSPATH=/path/to the /jar file/installed including the /jarfile jupyter notebook`
 
 This will start a jupyter notebook server and open your browser to its home directory.  
 
