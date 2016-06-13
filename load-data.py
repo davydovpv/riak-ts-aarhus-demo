@@ -30,7 +30,7 @@ with open('./demo-data-extract.csv', 'rU') as infile:
     r=csv.reader(infile)
     for l in r:
 		if l[0]!='status':
-			newl=[l[0],str(l[3]),datetime.strptime(l[5],'%Y-%m-%dT%H:%M:%S'),int(l[1]),int(l[2]),int(l[4]),int(l[6]),int(l[7]),int(l[8])]
+			newl=[l[0],str(l[3]),datetime.strptime(l[5],'%Y-%m-%dT%H:%M:%S'),int(l[1]),int(l[2]),int(l[4]),int(l[6])]
 			totalcount=totalcount+1
 			#print count
 			ds.append(newl)
