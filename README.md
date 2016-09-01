@@ -28,7 +28,7 @@ In the following instructions I assume that the demonstration is being loaded an
 
 ```bash
 $cd riak-ts-aarhus-demo
-$virtualenv
+$virtualenv .
 ```
 
 * Once the virtualenv has been created enter `$source ./bin/activate`  This will change the command prompt showing the virtual environment is active.
