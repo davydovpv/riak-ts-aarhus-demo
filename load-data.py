@@ -46,5 +46,6 @@ with open('./demo-data-extract.csv', 'rU') as infile:
 infile.close()
 print "Input file closed"
 to=t.new(ds)
-print "Storage result:  ",to.store()
-print totalcount
+if ds:
+	print "Storage result:  ",to.store()
+	print totalcount
